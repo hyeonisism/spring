@@ -25,7 +25,7 @@ public class SecurityJsonWebTokenManagement implements SecurityTokenManagement {
 
     private final SecurityAuthenticationManagement securityAuthenticationManagement;
 
-    public static final long TOKEN_VALID_TIME = 30 * 60 * 1000L;
+    private static final long TOKEN_VALID_TIME = 30 * 60 * 1000L;
 
     private static final String SECRET_KEY = Base64.getEncoder().encodeToString("HyeonisismSimpleJsonWebTokenSecurity".getBytes());
 
